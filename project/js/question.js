@@ -356,13 +356,13 @@ window.addEventListener("load",function(){
 	});
 	prev.addEventListener("click",function(){
 		localStorage.removeItem("ques1");
-		window.location.href="nestWell.html";
+		window.location.href="index.html";
 	});
 
 	var close = document.getElementById("close");
 	if(close){
 		close.addEventListener("click",function(){
-			window.location.href="nestWell.html";
+			window.location.href="index.html";
 		});
 	}
 });
@@ -434,7 +434,7 @@ window.addEventListener("load",function(){
 	var close = document.getElementById("close1");
 	if(close){
 		close.addEventListener("click",function(){
-			window.location.href="nestWell.html";
+			window.location.href="index.html";
 		});
 	}
 });
@@ -467,7 +467,7 @@ window.addEventListener("load",function(){
 	var close = document.getElementById("close2");
 	if(close){
 		close.addEventListener("click",function(){
-			window.location.href="nestWell.html";
+			window.location.href="index.html";
 		});
 	}
 	
@@ -502,7 +502,7 @@ window.addEventListener("load",function(){
 	var close = document.getElementById("close3");
 	if(close){
 		close.addEventListener("click",function(){
-			window.location.href="nestWell.html";
+			window.location.href="index.html";
 		});
 	}
 	
@@ -543,7 +543,7 @@ window.addEventListener("load",function(){
 	var close = document.getElementById("close4");
 	if(close){
 		close.addEventListener("click",function(){
-			window.location.href="nestWell.html";
+			window.location.href="index.html";
 		});
 	}
 	
@@ -634,7 +634,7 @@ window.addEventListener("load",function(){
 	var close = document.getElementById("close5");
 	if(close){
 		close.addEventListener("click",function(){
-			window.location.href="nestWell.html";
+			window.location.href="index.html";
 		});
 	}
 });
@@ -706,7 +706,7 @@ window.addEventListener("load",function(){
 	var close = document.getElementById("close6");
 	if(close){
 		close.addEventListener("click",function(){
-			window.location.href="nestWell.html";
+			window.location.href="index.html";
 		});
 	}
 });
@@ -778,7 +778,7 @@ window.addEventListener("load",function(){
 	var close = document.getElementById("close7");
 	if(close){
 		close.addEventListener("click",function(){
-			window.location.href="nestWell.html";
+			window.location.href="index.html";
 		});
 	}
 });
@@ -850,7 +850,7 @@ window.addEventListener("load",function(){
 	var close = document.getElementById("close8");
 	if(close){
 		close.addEventListener("click",function(){
-			window.location.href="nestWell.html";
+			window.location.href="index.html";
 		});
 	}
 });
@@ -922,7 +922,7 @@ window.addEventListener("load",function(){
 	var close = document.getElementById("close9");
 	if(close){
 		close.addEventListener("click",function(){
-			window.location.href="nestWell.html";
+			window.location.href="index.html";
 		});
 	}
 });
@@ -994,7 +994,7 @@ window.addEventListener("load",function(){
 	var close = document.getElementById("close10");
 	if(close){
 		close.addEventListener("click",function(){
-			window.location.href="nestWell.html";
+			window.location.href="index.html";
 		});
 	}
 });
@@ -1066,7 +1066,7 @@ window.addEventListener("load",function(){
 	var close = document.getElementById("close11");
 	if(close){
 		close.addEventListener("click",function(){
-			window.location.href="nestWell.html";
+			window.location.href="index.html";
 		});
 	}
 });
@@ -1152,7 +1152,7 @@ window.addEventListener("load",function(){
 	var close = document.getElementById("close12");
 	if(close){
 		close.addEventListener("click",function(){
-			window.location.href="nestWell.html";
+			window.location.href="index.html";
 		});
 	}
 });

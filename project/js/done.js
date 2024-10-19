@@ -3,7 +3,7 @@ window.addEventListener("load",function(){
 	let more = document.getElementById("more");
 	var close = document.getElementById("close");
 	back.addEventListener("click",function(){
-		window.location.href="nestWell.html";
+		window.location.href="index.html";
 	});
 	more.addEventListener("click",function(){
 		localStorage.setItem("goodFlag",true);
@@ -11,7 +11,7 @@ window.addEventListener("load",function(){
 	});
 	if(close){
 		close.addEventListener("click",function(){
-			window.location.href="nestWell.html";
+			window.location.href="index.html";
 		});
 	}
 });

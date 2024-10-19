@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
         goBackBtn.setAttribute('href', 'result2.html');
     } else {
 
-        goBackBtn.setAttribute('href', 'nestWell.html');
+        goBackBtn.setAttribute('href', 'index.html');
     }
 });
 

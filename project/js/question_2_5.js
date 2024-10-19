@@ -60,7 +60,7 @@ window.addEventListener("load",function(){
 	var close = document.getElementById("close");
 	if(close){
 		close.addEventListener("click",function(){
-			window.location.href="nestWell.html";
+			window.location.href="index.html";
 		});
 	}
 });

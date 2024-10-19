@@ -128,7 +128,7 @@ window.addEventListener("load", function () {
 	if (prev) {
 		prev.addEventListener("click", function () {
 			if (currentUrl == "question.html") {
-				window.location.href = "nestWell.html";
+				window.location.href = "index.html";
 			} else if (currentUrl == "question_2.html") {
 				window.location.href = "question.html";
 			} else if (currentUrl == "question_2_1.html") {
@@ -162,7 +162,7 @@ window.addEventListener("load", function () {
 			} else if (currentUrl == "question_10.html") {
 				window.location.href = "question_9.html";
 			} else if (currentUrl == "done.html") {
-				window.location.href = "nestWell.html";
+				window.location.href = "index.html";
 			}
 		});
 	}
@@ -170,7 +170,7 @@ window.addEventListener("load", function () {
 	var close = document.getElementById("close");
 	if (close) {
 		close.addEventListener("click", function () {
-			window.location.href = "nestWell.html";
+			window.location.href = "index.html";
 		});
 	}
 });
