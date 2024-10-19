@@ -1,0 +1,143 @@
+<!doctype html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Knowledge Base Theme</title>
+	<link rel='stylesheet' href='../css/style.css' type='text/css' media='all' />
+
+</head>
+
+<body>
+	<header class="hd_1">
+		<div class="logo">Healthy babies need healthy mothers </div>
+		<nav class="nav-links">
+			<a href="nestWell.html" class="nav-link">Home</a>
+			<div onclick="document.getElementById('trigger-modal').style.display='block'" class="nav-link">Get Help
+			</div>
+		</nav>
+	</header>
+	<div class="nw_bg" style="height: 100%;padding-top: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+		<div class="titleBox">
+			<h2 class="w100">
+				Family Safety
+			</h2>
+		</div>
+		<div class="w40" style="display: flex; align-items: center; justify-content: center; height: auto; width: auto;">
+			<iframe width="650" height="400" src="https://www.youtube.com/embed/zuN1wlwQLEA?si=pinBoNZvnE5j9kbn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
+		<div class="contentBox m_t30">
+			<div style="padding: 30px;margin-top: 30px;font-size: 20px;line-height: 30px;">
+				Domestic violence refers to violence that occurs between family members who are connected by marriage or
+				intimate relationships, blood ties, and the law. It includes physical, sexual, emotional, and other
+				forms of violence that occur in family relationships, as well as threatening to use violence. Domestic
+				violence may occur between husband and wife, parents and children, brothers and sisters, grandparents
+				and grandchildren and other family members.
+			</div>
+		</div>
+		<div class="button"
+		style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+			<a id="goBackBtn">
+				<div class="bt_1 m_t20" style="width: 220px;">
+					Go Back
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<!-- Get Help page -->
+	<div id="trigger-modal" class="modal">
+		<div class="blur"></div>
+		<form class="modal_content" style="height: auto">
+
+			<div class="container">
+				<div style="padding: 30px;margin-top: 30px;font-size: 20px;line-height: 30px; height: 50%">
+					<span onclick="document.getElementById('trigger-modal').style.display='none'" class="close"
+						title="Close Modal">X</span>
+					<h1 class="w100 txt_cen">
+						Help with mental health and addiction
+					</h1>
+					<hr>
+					<p style="font-size: 25px">
+						If you're in immediate danger,
+						call 111 and ask for the police. If it's unsafe to speak, push 55 on a mobile (or any number on
+						a landline)
+						to be put through to the police.
+						<br>
+					</p>
+					<h2>Mental health and addiction services</h2>
+					<p style="font-size: 25px">
+						You do not have to deal with a mental illness or addiction on your own — there are resources,
+						helplines, support groups, websites and counsellors available.
+						<br><br>
+						Information and resources to help with mental illness and addiction.<br>
+						<a href="https://www.health.govt.nz/your-health/conditions-and-treatments/mental-health"
+							style="color: blue">
+							Mental health resources — Ministry of Health
+						</a>
+						<br>
+						<br>
+						What to do in an emergency, find a list of helplines and access other resources to help you find
+						services.<br>
+						<a href="https://www.health.govt.nz/your-health/services-and-support/health-care-services/mental-health-services"
+							style="color: blue">
+							Mental health services— Ministry of Health
+						</a>
+						<br>
+						<br>
+						Alcohol and drug use can affect your physical health, state of mind, relationships and finances.
+						If you or someone you care about has an alcohol or drug problem, there’s help available.<br>
+						<a href="https://www.health.govt.nz/your-health/healthy-living/addictions/alcohol-and-drugs"
+							style="color: blue">
+							Alcohol and drug abuse — Ministry of Health
+						</a>
+						<br>
+						<br>
+						Talk to your health professional, or find support in your local area.<br>
+						<a href="https://www.familyservices.govt.nz/directory/searchresultspublic.htm?searchTerms=mental+health+support+groups"
+							style="color: blue">
+							Support groups and counselling — Family Services Directory
+						</a>
+						<br>
+						<br>
+						If you’re worried about your own or someone else's gambling, you can call
+						<b>0800 654 655</b> anytime — or free text <b>8006</b>.
+						<br>
+						<a href="https://gamblinghelpline.co.nz/" style="color: blue">
+							Gambling Helpline
+						</a>
+					</p>
+
+
+				</div>
+
+			</div>
+		</form>
+
+	<script>
+
+	document.addEventListener('DOMContentLoaded', function() {
+    const goBackBtn = document.getElementById('goBackBtn');
+    const lastPage = sessionStorage.getItem('lastPage');
+
+    if (lastPage === 'result') {
+        goBackBtn.setAttribute('href', 'result.html');
+    } else if (lastPage === 'result2') {
+        goBackBtn.setAttribute('href', 'result2.html');
+    } else {
+        // 如果没有记录，设置为默认页面
+        goBackBtn.setAttribute('href', 'nestWell.html');
+    }
+});
+
+		var modal = document.getElementById('trigger-modal');
+			window.onclick = function (event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+	</script>
+
+</body>
+
+</html>
