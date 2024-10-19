@@ -1,0 +1,136 @@
+<!doctype html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowledge Base Theme</title>
+  <link rel='stylesheet' href='project/css/style.css' type='text/css' media='all' />
+
+</head>
+
+<body class="page_ques1">
+  <header class="hd_1">
+    <div class="logo">Healthy babies need healthy mothers </div>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <div onclick="document.getElementById('trigger-modal').style.display='block'" class="nav-link">Get Help
+      </div>
+    </nav>
+  </header>
+  <div >
+    <div id="resultList">
+
+    </div>
+    <a id="result1" href="nestWell3.html?from=result2" onclick="sessionStorage.setItem('lastPage', 'result2')">
+      <div class="bt_4 ml40 m_t20" >
+        Alcohol
+      </div>
+    </a>
+    <a id="result2" href="nestWell2.html?from=result2" onclick="sessionStorage.setItem('lastPage', 'result2')" style="width: auto">
+      <div class="bt_4 ml40 m_t20">
+        Cannabis
+      </div>
+    </a>
+    <a id="result3" href="methamphetamine.html?from=result2" onclick="sessionStorage.setItem('lastPage', 'result2')" style="width: auto">
+      <div class="bt_4 ml40 m_t20">
+        Methamphetamine
+      </div>
+    </a>
+    <a id="result4" href="nestWell4.html?from=result2" onclick="sessionStorage.setItem('lastPage', 'result2')" style="width: auto">
+      <div class="bt_4 ml40 m_t20">
+        Smoking
+      </div>
+    </a>
+    <a id="result5" href="nestWell6.html?from=result2" onclick="sessionStorage.setItem('lastPage', 'result2')" style="width: auto">
+      <div class="bt_4 ml40 m_t20">
+        Family Safety
+      </div>
+    </a>
+    <a id="result6" href="nestWell5.html?from=result2" onclick="sessionStorage.setItem('lastPage', 'result2')" style="width: auto">
+      <div class="bt_4 ml40 m_t20">
+        Other Drugs
+      </div>
+    </a>
+  </div>
+
+  <!-- Get Help page -->
+  <div id="trigger-modal" class="modal">
+    <div class="blur"></div>
+    <form class="modal_content" style="height: auto">
+
+      <div class="container">
+        <div style="padding: 30px;margin-top: 30px;font-size: 20px;line-height: 30px; height: 50%">
+          <span onclick="document.getElementById('trigger-modal').style.display='none'" class="close"
+            title="Close Modal">X</span>
+          <h1 class="w100 txt_cen">
+            Help with mental health and addiction
+          </h1>
+          <hr>
+          <p style="font-size: 25px">
+            If you're in immediate danger,
+            call 111 and ask for the police. If it's unsafe to speak, push 55 on a mobile (or any number on
+            a landline)
+            to be put through to the police.
+            <br>
+          </p>
+          <h2>Mental health and addiction services</h2>
+          <p style="font-size: 25px">
+            You do not have to deal with a mental illness or addiction on your own — there are resources,
+            helplines, support groups, websites and counsellors available.
+            <br><br>
+            Information and resources to help with mental illness and addiction.<br>
+            <a href="https://www.health.govt.nz/your-health/conditions-and-treatments/mental-health"
+              style="color: blue">
+              Mental health resources — Ministry of Health
+            </a>
+            <br>
+            <br>
+            What to do in an emergency, find a list of helplines and access other resources to help you find
+            services.<br>
+            <a href="https://www.health.govt.nz/your-health/services-and-support/health-care-services/mental-health-services"
+              style="color: blue">
+              Mental health services— Ministry of Health
+            </a>
+            <br>
+            <br>
+            Alcohol and drug use can affect your physical health, state of mind, relationships and finances.
+            If you or someone you care about has an alcohol or drug problem, there’s help available.<br>
+            <a href="https://www.health.govt.nz/your-health/healthy-living/addictions/alcohol-and-drugs"
+              style="color: blue">
+              Alcohol and drug abuse — Ministry of Health
+            </a>
+            <br>
+            <br>
+            Talk to your health professional, or find support in your local area.<br>
+            <a href="https://www.familyservices.govt.nz/directory/searchresultspublic.htm?searchTerms=mental+health+support+groups"
+              style="color: blue">
+              Support groups and counselling — Family Services Directory
+            </a>
+            <br>
+            <br>
+            If you’re worried about your own or someone else's gambling, you can call
+            <b>0800 654 655</b> anytime — or free text <b>8006</b>.
+            <br>
+            <a href="https://gamblinghelpline.co.nz/" style="color: blue">
+              Gambling Helpline
+            </a>
+          </p>
+
+
+        </div>
+
+      </div>
+    </form>
+
+    <script>
+      var modal = document.getElementById('trigger-modal');
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+
+</body>
+
+</html>
