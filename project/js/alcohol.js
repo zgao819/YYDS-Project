@@ -38,16 +38,14 @@ back_al.addEventListener("click",show1);
 
 document.addEventListener('DOMContentLoaded', function () {
     const goBackBtn = document.getElementById('goBackBtn');
-    const lastPage = localStorage.getItem('lastPage');
+    const lastPage = sessionStorage.getItem('lastPage');
 
     if (lastPage === 'result') {
-        localStorage.removeItem("lastPage");
         goBackBtn.setAttribute('href', 'result.html');
     } else if (lastPage === 'result2') {
-        localStorage.removeItem("lastPage");
         goBackBtn.setAttribute('href', 'result2.html');
     } else {
-        localStorage.removeItem("lastPage");
+
         goBackBtn.setAttribute('href', 'result2.html');
     }
 });
