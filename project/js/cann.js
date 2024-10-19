@@ -33,7 +33,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (lastPage === 'result') {
       goBackBtn.setAttribute('href', 'result.html');
-    }else {
+    } else if (lastPage === 'result2') {
+      goBackBtn.setAttribute('href', 'result2.html');
+    } else {
 
       goBackBtn.setAttribute('href', 'result2.html');
     }
