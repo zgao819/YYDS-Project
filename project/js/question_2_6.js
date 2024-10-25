@@ -2,6 +2,7 @@ window.addEventListener("load",function(){
 	let next = document.getElementById("next");
 	let prev = document.getElementById("prev");
 	var bt3 = document.getElementsByClassName("bt_3");
+	
 	let asList = [];
 	var nextUrl = "result.html";
 	for(let temp = 0;temp<bt3.length;temp++){
@@ -24,10 +25,12 @@ window.addEventListener("load",function(){
 				console.log(bt3[temp].innerText);
 				localStorage.setItem("ques_2_6",bt3[temp].innerText);
 				if(bt3[temp].innerText!='None of these'){
+					localStorage.setItem("ques2_6",true);
 					asList.push(bt3[temp].innerText);
 					nextUrl = "question_2_7.html"
 				}
 				if(bt3[temp].innerText=="None of these"){
+					localStorage.removeItem("ques2_6");
 					nextUrl = "result.html"
 				}
 			}

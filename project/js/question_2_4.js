@@ -3,6 +3,7 @@ window.addEventListener("load",function(){
 	let prev = document.getElementById("prev");
 	var bt3 = document.getElementsByClassName("bt_3");
 	var nextUrl = "question_2_6.html";
+	
 	let asList = [];
 	for(let temp = 0;temp<bt3.length;temp++){
 		bt3[temp].addEventListener("click",function(){
@@ -10,6 +11,7 @@ window.addEventListener("load",function(){
 				bt3[temp].style.backgroundColor="#F5BDBD";
 				bt3[temp].style.color="black";
 				console.log(bt3[temp].innerText);
+				
 				localStorage.removeItem("ques_2_4");
 				if(asList.length>0){
 					for(let j=0;j<asList.length;j++){
@@ -25,6 +27,7 @@ window.addEventListener("load",function(){
 				console.log(bt3[temp].innerText);
 				localStorage.setItem("ques_2_4",bt3[temp].innerText);
 				if(bt3[temp].innerText!='None of these'){
+					localStorage.setItem("ques2_4",true);
 					asList.push(bt3[temp].innerText);
 					nextUrl = "question_2_5.html"
 				}
@@ -36,6 +39,7 @@ window.addEventListener("load",function(){
 				// 	}
 				// }
 				if(bt3[temp].innerText=="None of these"){
+					localStorage.removeItem("ques2_4");
 					nextUrl = "question_2_6.html"
 				}
 			}

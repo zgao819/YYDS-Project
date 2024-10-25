@@ -53,19 +53,24 @@ window.addEventListener("load",function(){
 		// }
 		// resultList.innerHTML=html;
 		
-		if(asList1.length>0||asList2.length>0){
+		if(localStorage.getItem("ques2_4")||localStorage.getItem("ques2_6")){
 			result3.style.display="block";
 		}
-		
-		if(localStorage.getItem("ques6")||localStorage.getItem("ques1")){
+		if(localStorage.getItem("ques10")){
+			result1.style.display="block";
+		}
+		if(localStorage.getItem("ques1")){
 			result1.style.display="block";
 			result2.style.display="block";
 			result3.style.display="block";
 		}
+		if(localStorage.getItem("ques6")){
+			result1.style.display="block";
+		}
 		if(localStorage.getItem("ques9")){
 			result4.style.display="block";
 		}
-		if(localStorage.getItem("ques5")){
+		if(localStorage.getItem("ques5")||localStorage.getItem("ques3")){
 			result5.style.display="block";
 		}
 });

@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
         goBackBtn.setAttribute('href', 'result2.html');
     } else {
 
-        goBackBtn.setAttribute('href', 'result2.html');
+        goBackBtn.setAttribute('href', 'index.html');
     }
 });
 
